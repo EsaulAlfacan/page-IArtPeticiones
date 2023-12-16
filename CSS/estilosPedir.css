@@ -43,9 +43,11 @@ body {
     color: #fff;
     padding: 20px;
     text-align: center;
+    min-height: 130px;
 }
 
 .form-container {
+    min-height: 500px;
     background: #fff;
     padding: 20px;
     margin-top: 5px;
@@ -78,14 +80,16 @@ input[type="submit"]:hover {
 }
 
 .contenedor__btn {
+    height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: -15px;
+    margin-top: 65px;
 }
 
 .btn {
+    margin-top: 50px;
     text-align: center;
     outline: 0;
     display: inline-flex;

@@ -13,8 +13,6 @@ html {
 
 body {
     font-family: 'Rubik Scribble', sans-serif;
-    max-height: 100vh;
-    min-height: 100vh;
 }
 
 :root {
@@ -81,6 +79,7 @@ body {
 }
 
 .logo {
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,6 +97,7 @@ body {
 }
 
 .sigueme {
+    height: 200px;
     margin-top: -30px;
     display: flex;
     flex-direction: column;
