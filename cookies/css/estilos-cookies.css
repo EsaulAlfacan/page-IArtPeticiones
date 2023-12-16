@@ -1,0 +1,154 @@
+/*ESTILOS GENERALES PARA TODOS LOS DOCUMENTOS HTML*/
+
+/*ESTILOS AL SELECTOR UNIVERSAL/////////////////////////////////////////////////////////*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*SECCCIONES DEL HTML///////////////////////////////////////////////////////////////////*/
+body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Octo-a';
+}
+
+/*FUENTES///////////////////////////////////////////////////////////////////////////////*/
+@font-face {
+	font-family: 'Neutron';
+	src: url(/assets/fonts/Neutron.ttf);
+}
+
+@font-face {
+	font-family: 'Cubic';
+	src: url(/assets/fonts/cubic.ttf);
+}
+
+@font-face {
+	font-family: 'Octo-a';
+	src: url(/assets/fonts/Octosquares.ttf);
+}
+
+@font-face {
+	font-family: 'Octo-b';
+	src: url(/assets/fonts/Octosquares-Bold.ttf);
+}
+
+/*SELECTORES RAIZ////////////////////////////////////////////////////////////////////////*/
+:root {
+	--color-morado: #852362;
+	--color-gris: #4d3f3f;
+	--color-azul: #005089;
+	--color-verde: #708c32;
+	--color-amarillo: #f2cb05;
+	--color-negro: #000000;
+	--color-blanco: #fff;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+/* Estilo para el fondo de partículas ///////////////////////////////////////////////////*/
+#particles-js {
+	width: 100%;
+	height: 100%;
+	z-index: -110;
+	position: fixed;
+	margin-top: 0px;
+}
+
+/*ESTILO SUPERIOR DEL NAV*/
+
+.contenedor-logo a img,
+.contenedor-logo a h1 {
+	transform: translateY(1%);
+
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+.aviso-cookies p {
+	margin-bottom: 20px;
+	line-height: 150%;
+}
+
+.aviso-cookies {
+	display: none;
+	background: var(--color-azul);
+	padding: 20px;
+	width: calc(100% - 40px);
+	max-width: 300px;
+	line-height: 150%;
+	border-radius: 10px;
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	z-index: 3000;
+	padding-top: 60px;
+	box-shadow: 0px 2px 20px 10px rgba(222, 222, 222, .45);
+	text-align: center;
+}
+
+.aviso-cookies.activo {
+	display: block;
+}
+
+.aviso-cookies .galleta {
+	max-width: 100px;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+}
+
+.aviso-cookies .titulo,
+.aviso-cookies .parrafo {
+	margin-bottom: 15px;
+	color: var(--color-blanco);
+}
+
+.aviso-cookies .boton {
+	width: 100%;
+	background: var(--color-blanco);
+	border: none;
+	color: var(--color-negro);
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	padding: 15px 20px;
+	font-weight: 700;
+	cursor: pointer;
+	transition: .3s ease all;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	font-size: 14px;
+}
+
+.aviso-cookies .boton:hover {
+	background: var(--color-gris);
+	color: var(--color-blanco);
+}
+
+.aviso-cookies .enlace {
+	color: var(--color-blanco);
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.aviso-cookies .enlace:hover {
+	text-decoration: underline;
+}
+
+.fondo-aviso-cookies {
+	display: none;
+	background: rgba(0, 0, 0, .45);
+	position: fixed;
+	z-index: 2500;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.fondo-aviso-cookies.activo {
+	display: block;
+}

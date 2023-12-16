@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Rubik Scribble', sans-serif;
+}
+
+:root {
+    --color-azulcalro: #04C4D9;
+    --color-azulfuerte: #0D7F8C;
+    --color-verde: #B6F25C;
+    --color-naranja: #F27405;
+    --color-rojo: #D91A1A;
+    --color-blanco: #fff;
+    --color-negro: #000;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+.menu {
+    width: 100%;
+    height: 70px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-azulfuerte);
+    position: relative;
+    z-index: 1000;
+}
+
+.menu__lista {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px;
+    list-style: none;
+}
+
+.menu__item {
+    margin: 5px;
+}
+
+.menu__link {
+    text-decoration: none;
+    font-weight: 900;
+    color: var(--color-blanco);
+    transition: transform 0.1s ease, color 0.1s ease, text-shadow 0.1s ease;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.menu__link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-verde);
+    transform: scaleX(0);
+    transition: transform 0.1s ease;
+}
+
+.menu__link:hover,
+.menu__link:focus {
+    color: var(--color-rojo);
+    transform: scale(1.05);
+    transform: translatey(-5px);
+}
+
+.menu__link:hover::after,
+.menu__link:focus::after {
+    transform: scaleX(1);
+}
+
+.menu__link:active {
+    color: var(--color-naranja);
+    transform: scale(0.95);
+}
+
+
+.menu__separador {
+    display: inline-block;
+    height: 100%;
+    border: solid var(--color-azulcalro) 0px;
+    border-radius: 20px;
+}

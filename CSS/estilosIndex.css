@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Rubik Scribble', sans-serif;
+    max-height: 100vh;
+    min-height: 100vh;
+}
+
+:root {
+    --color-azulcalro: #04C4D9;
+    --color-azulfuerte: #0D7F8C;
+    --color-verde: #B6F25C;
+    --color-naranja: #F27405;
+    --color-rojo: #D91A1A;
+    --color-blanco: #fff;
+    --color-negro: #000;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+.container {
+    width: 100%;
+    height: 100vh;
+    --s: 100px;
+    --c1: var(--color-negro);
+    --c2: var(--color-azulfuerte);
+    --_g: var(--c2) 6% 14%, var(--c1) 16% 24%, var(--c2) 26% 34%,
+        var(--c1) 36% 44%, var(--c2) 46% 54%, var(--c1) 56% 64%, var(--c2) 66% 74%,
+        var(--c1) 76% 84%, var(--c2) 86% 94%;
+    background: radial-gradient(100% 100% at 100% 0,
+            var(--c1) 4%,
+            var(--_g),
+            #0008 96%,
+            #0000),
+        radial-gradient(100% 100% at 0 100%,
+            #0000,
+            #0008 4%,
+            var(--_g),
+            var(--c1) 96%) var(--c1);
+    background-size: var(--s) var(--s);
+}
+
+.bienvenida {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-negro);
+
+}
+
+.texto-3d {
+    display: flex;
+    font-size: 25px;
+    font-weight: 900;
+    color: #f27405;
+    text-shadow:
+        0px 17px 0 var(--color-blanco),
+        0px -17px 0 var(--color-verde);
+    transition: transform 0.3s, text-shadow 0.3s;
+}
+
+
+.texto-3d:hover {
+    transform: scale(1.1) rotate(10deg);
+    text-shadow:
+        10px 17px 0 var(--color-blanco),
+        -10px -17px 0 var(--color-verde);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-bottom: 2px solid var(--color-azulcalro);
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sigueme {
+    margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.sigueme__link {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+    padding: 20px;
+    border: solid var(--color-negro) 5px;
+}
+
+.sigueme__link:hover,
+.sigueme__link:focus {
+    transform: scale(1.1);
+}
+
+.fa-tiktok {
+    color: #000000;
+
+}
+
+.fa-facebook-f {
+    color: #0080ff;
+}

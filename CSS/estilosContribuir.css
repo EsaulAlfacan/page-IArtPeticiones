@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Rubik Scribble', sans-serif;
+}
+
+:root {
+    --color-azulcalro: #04C4D9;
+    --color-azulfuerte: #0D7F8C;
+    --color-verde: #B6F25C;
+    --color-naranja: #F27405;
+    --color-rojo: #D91A1A;
+    --color-blanco: #fff;
+    --color-negro: #000;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+.contribuir__imagen {
+    width: 60%;
+    height: 80px;
+}
+
+.donacion__seccion {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.donacion__texto h1 {
+    color: #2a7f62;
+    font-size: 24px;
+}
+
+.donacion__invitacion h2 {
+    color: #d67c1c;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.mercado__pago {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

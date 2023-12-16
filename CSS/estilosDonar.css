@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Rubik Scribble', sans-serif;
+}
+
+:root {
+    --color-azulcalro: #04C4D9;
+    --color-azulfuerte: #0D7F8C;
+    --color-verde: #B6F25C;
+    --color-naranja: #F27405;
+    --color-rojo: #D91A1A;
+    --color-blanco: #fff;
+    --color-negro: #000;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+.cta {
+    font-size: 25px;
+    padding: 5px 5px 5px 20px;
+    width: 50%;
+    margin-left: -20px;
+    border-radius: 15px;
+    text-align: center;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 40%;
+    z-index: 1000;
+    background-color: var(--color-naranja);
+    border: solid 2px var(--color-blanco);
+    animation: heartbeat 1.5s ease-in-out infinite both;
+    -webkit-box-shadow: 0px 0px 31px 10px rgba(242, 115, 5, 0.6);
+    -moz-box-shadow: 0px 0px 31px 10px rgba(242, 115, 5, 0.6);
+    box-shadow: 0px 0px 31px 10px rgba(242, 115, 5, 0.6);
+}
+
+@keyframes heartbeat {
+    from {
+        transform: scale(1);
+        transform-origin: center center;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        transform: scale(0.91);
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        transform: scale(0.98);
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        transform: scale(0.87);
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+}
+
+.cta:hover {
+    color: var(--color-blanco);
+    animation: none;
+}
